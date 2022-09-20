@@ -10,7 +10,6 @@ data <- rawData %>%
          rec_yards_gained,rec_yards_gained_exp,pass_attempt_team,rec_attempt,rec_attempt_team) %>%
   mutate(RecYOE = rec_yards_gained - rec_yards_gained_exp) %>%
   filter(!is.na(full_name))
-  #filter(position == 'WR')
 
 data <- data %>%
   group_by(full_name,position) %>%
@@ -26,7 +25,7 @@ data <- data %>%
   mutate(TargetMS = Targets / TeamTargets)
 
 data %>%
-  ggplot(aes(x=TeamTargets,y=Targets,size=(RecYOE^2),color=position)) +
+  ggplot(aes(x=TeamTargets,y=Targets,size=RecYards,color=position)) +
   geom_point(alpha=0.5) +
   theme_bw() +
   labs(x='Team Targets',
@@ -36,7 +35,7 @@ data %>%
   theme(plot.title = element_text(size=18,face='bold',hjust=0.5),
         plot.subtitle = element_text(hjust=0.5))
 
-ggsave('TgtMS2021.png',width=12,height=12,dpi='retina')
+ggsave('TgtMS2021.png',width=6,height=6,dpi='retina')
   
   
   
