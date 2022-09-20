@@ -35,7 +35,7 @@ data %>%
   theme(plot.title = element_text(size=18,face='bold',hjust=0.5),
         plot.subtitle = element_text(hjust=0.5))
 
-ggsave('TgtMS2021.png',width=6,height=6,dpi='retina')
+ggsave('TgtMS2021.png',width=4,height=4,dpi='retina')
   
   
   
