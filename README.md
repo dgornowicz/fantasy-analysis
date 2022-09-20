@@ -1,4 +1,5 @@
 # fantasy-analysis
 https://www.nflfastr.com/
 
-![TgtMS2021](https://user-images.githubusercontent.com/102050273/191326012-f1437eb5-bdd3-4990-a843-ac522ae9bf90.png)
+![TgtMS2021](https://user-images.githubusercontent.com/102050273/191326567-665067d3-427a-4a7d-b099-dd240c523466.png)
+
